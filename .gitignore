@@ -1,0 +1,51 @@
+# ------------------------------------------------------------------------------
+# Dependencias de Node.js (Aplica a raíz y subcarpetas como backend/)
+# ------------------------------------------------------------------------------
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ------------------------------------------------------------------------------
+# Archivos de Compilación / TypeScript
+# ------------------------------------------------------------------------------
+**/dist/
+**/build/
+*.tsbuildinfo
+
+# ------------------------------------------------------------------------------
+# Base de Datos Local y Archivos Temporales de SQLite
+# ------------------------------------------------------------------------------
+# Cubre DBs en raíz y en subdirectorios (ej: backend/ciudadan.db, backend/data.db)
+**/*.db
+**/*.db-journal
+**/*.db-wal
+**/*.db-shm
+ciudadan.db*
+
+# ------------------------------------------------------------------------------
+# Variables de Entorno y Secretos
+# ------------------------------------------------------------------------------
+**/.env
+**/.env.local
+**/.env.development.local
+**/.env.production.local
+*.pem
+
+# ------------------------------------------------------------------------------
+# Configuración de Editores y Sistema Operativo
+# ------------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+.idea/
+
+# Ignora notas de la wiki, pero PERMITE la carpeta backend
+wiki/*
+!wiki/.gitkeep
+!wiki/backend/
+src/vault/*
